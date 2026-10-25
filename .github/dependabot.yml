@@ -1,4 +1,3 @@
-# Set update schedule for GitHub Actions
 version: 2
 updates:
   - package-ecosystem: "github-actions"
@@ -7,13 +6,7 @@ updates:
       - "pr: dependency-update"
     schedule:
       interval: weekly
-      time: "06:00"
-    open-pull-requests-limit: 10
-  - package-ecosystem: "pip"
-    directory: "/"
-    labels:
-      - "pr: dependency-update"
-    schedule:
-      interval: weekly
-      time: "06:00"
-    open-pull-requests-limit: 10
+      day: monday
+      time: "09:00"
+      timezone: "Australia/Sydney"
+    open-pull-requests-limit: 5
